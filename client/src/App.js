@@ -18,8 +18,13 @@ function App() {
 				className="navbar navbar-expand-sm navbar-dark bg-dark"
 				style={{ marginBottom: "20px" }}
 			>
-				<a className="navbar-brand" href="">
-					<img src={logo} width="30" height="30" alt="" />
+				<a className="navbar-brand" href="https://shafiqimtiaz.github.io/">
+					<img
+						src={logo}
+						width="30"
+						height="30"
+						alt="https://shafiqimtiaz.github.io/"
+					/>
 				</a>
 				<Link to="/" className="navbar-brand">
 					Le Warehouse
