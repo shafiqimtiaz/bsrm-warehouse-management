@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-const apiEndPoint = process.env.REACT_APP_API_URL;
+const apiEndPoint = process.env.REACT_APP_URL;
 
 export default class InventoryList extends Component {
 	constructor(props) {
