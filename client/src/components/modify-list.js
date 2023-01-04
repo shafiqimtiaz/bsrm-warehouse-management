@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+const apiEndPoint = process.env.REACT_APP_API_URL;
+
 export default class UpdateList extends Component {
 	constructor(props) {
 		super(props);
@@ -20,7 +22,7 @@ export default class UpdateList extends Component {
 	// Starting lifecycle and calling for data from database
 	componentDidMount() {
 		axios
-			.get("/inv/")
+			.get(apiEndPoint + "/inv/")
 			.then((response) => {
 				this.setState({ inventory: response.data });
 			})
@@ -57,7 +59,7 @@ export default class UpdateList extends Component {
 		};
 
 		// After patch has been confirmed to database change state to change component
-		await axios.patch("/inv/" + id, obj).then((res) => {
+		await axios.patch(apiEndPoint + "/inv/" + id, obj).then((res) => {
 			// Helper function to change state to trigger component lifecycle
 			this.onChangeQuantity(newQuantity, index);
 			console.log(res.data.message);
