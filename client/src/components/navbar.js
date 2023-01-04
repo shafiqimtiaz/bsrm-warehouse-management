@@ -6,7 +6,7 @@ export default class Navbar extends Component {
 	render() {
 		return (
 			<nav
-				className="navbar navbar-expand-sm navbar-dark bg-dark"
+				className="navbar navbar-expand-lg navbar-dark bg-dark"
 				style={{ marginBottom: "20px" }}
 			>
 				<a className="navbar-brand" href="https://shafiqimtiaz.github.io/">
