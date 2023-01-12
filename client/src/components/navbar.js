@@ -18,7 +18,7 @@ export default class Navbar extends Component {
 					/>
 				</a>
 				<Link to="/" className="navbar-brand">
-					Le Warehouse
+					BSRM Warehouse
 				</Link>
 
 				<div className="navbar-collapse">
